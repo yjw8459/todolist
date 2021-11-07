@@ -1,10 +1,10 @@
 # todolist
 
 
-Back-end 
+Back-end :
 Spring Boot
 Kotlin 
 Data JPA
 
-Front-end
+Front-end :
 React
