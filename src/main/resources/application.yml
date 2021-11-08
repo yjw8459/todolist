@@ -3,12 +3,12 @@ spring:
     url: jdbc:mysql://localhost:3306/yjw_db
     username: yjw
     password: 1234
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: create
     database: mysql
-    database-platform: org.hibernate.dialect.MySQLInnoDBDialect
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     properties:
       hibernate:
         show_sql: true
