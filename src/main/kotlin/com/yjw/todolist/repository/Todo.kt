@@ -4,7 +4,7 @@ import org.hibernate.annotations.ColumnDefault
 import javax.persistence.*
 
 /**
- * Entity
+ * Entity(테이블과 매핑 )
  * var id : 변수 id
  * var id : Long? = null : 타입은 Long 타입이고 기본 값은 null
  * 변수에 ?를 붙으면 null이 들어갈 수 있다는 뜻.
@@ -23,10 +23,18 @@ class Todo(
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         var id: Long? = null,
 
+        /**
+         * Boolean : bit Type
+         * Not Null
+         */
         @Column(nullable = false)
         @ColumnDefault("false")//컬럼의 기본 값
         var completed: Boolean = false,
 
+        /**
+         * varchar2(255)
+         * Not Null
+         */
         @Column(nullable = false)
         var todoName : String
 )
